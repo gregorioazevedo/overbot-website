@@ -1,0 +1,106 @@
+:root{
+    --corEnfase: #ff5252;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    color: #ffffff;
+
+    font-family: Jost;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+body{
+    background-color: #000000;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.navDiv{
+    margin: 30px ;
+
+    width: 600px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navButtons{
+    font-size: 30px;
+
+    border: none;
+    background-color: transparent;
+}
+.navButtons:hover{
+    color: var(--corEnfase);
+    cursor: pointer;
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.sectionBot{
+    display: flex;
+    position: relative;
+
+
+    justify-content:space-evenly;
+    align-items: center;
+
+    margin-top: 300px;
+
+    width: 100%;
+}
+
+.botIcon{
+    width: 106px;
+    height: 86px;
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+
+    color: var(--corEnfase);
+}
+
+.linhaNavegacao{
+    background-color: var(--corEnfase);
+
+    width: 5px;
+    height: 2000px;
+
+    border-radius: 100px;
+
+    position: absolute;
+
+    top: 5px;
+
+}
+
+.divNavegacao{
+    width: 50px;
+    height: 50px;
+
+    background-color: aqua;
+
+}
+
+.centroDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
