@@ -1,11 +1,22 @@
 :root{
-    --baseColor: #000000;
+    --defaultBackgroudColor: #000000;
+
+    --primaryTextColor: #ffffff;
     --highlightColor: #FF5252;
+
+    --primaryFontFamily: "Press Start 2P";
+    --secondaryFontFamily: Jost;
+
+    --botSize: 250px;
 }
 
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
+    background-color: var(--defaultBackgroudColor);
 }
 
 header{
@@ -28,23 +39,85 @@ main{
 }
 
 #botFace{
-    width: 600px;
+    width: var(--botSize);
 }
 
 #botEyes{
     display: flex;
     position: absolute;
 
-    top: 170px;
+    top: 173px;
 
-    width: 600px;
+    width: var(--botSize);
 }
 
 #talkingArea{
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
 
     width: 800px;
-    height: 100px;
+    height: 200px;
 
-    background-color: #00000010;
+    background-color: #ffffff10;
+
+    font-family: var(--primaryFontFamily);
+}
+
+.talkingButton{
+
+    font-family: inherit;
+    font-size: 20px;
+
+    background-color: transparent;
+    color: var(--primaryTextColor);
+    
+    border:none;
+
+    margin: 30px;
+}
+.talkingButton:hover{
+    color: var(--highlightColor);
+}
+
+/* #triangleSelection{
+    display: flex;
+    position: absolute;
+
+    top: 560px;
+    left: 700px;
+
+    border-right: 10px solid transparent;
+    border-left: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+} */
+
+#triangleClose{
+    display: flex;
+    position: absolute;
+
+    top: 645px;
+    left: 1335px;
+
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid var(--primaryTextColor);
+}
+
+#inviteButton{
+    margin-top: 50px;
+
+    width: 80px;
+
+    background-color: var(--highlightColor);
+    
+    border-radius: 5px;
+    border-color: transparent;
+
+    font-family: var(--secondaryFontFamily);
+    font-size: 30px;
 }
