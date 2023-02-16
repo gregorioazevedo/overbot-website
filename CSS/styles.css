@@ -17,11 +17,11 @@
 
 body{
     background-color: var(--defaultBackgroudColor);
+    font-family: var(--primaryFontFamily);
 }
 
 header{
-
-    margin-top: 10px;
+    padding-top: 10px;
 
     display: flex;
     justify-content: center;
@@ -38,6 +38,10 @@ main{
     flex-direction: column;
 }
 
+#botLogo{
+    position: relative;
+}
+
 #botFace{
     width: var(--botSize);
 }
@@ -46,28 +50,25 @@ main{
     display: flex;
     position: absolute;
 
-    top: 173px;
-
     width: var(--botSize);
 }
 
 #talkingArea{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 
     margin-top: 50px;
+    padding: 30px;
 
     width: 800px;
     height: 200px;
 
     background-color: #ffffff10;
-
-    font-family: var(--primaryFontFamily);
 }
 
 .talkingButton{
-
     font-family: inherit;
     font-size: 20px;
 
@@ -99,8 +100,8 @@ main{
     display: flex;
     position: absolute;
 
-    top: 645px;
-    left: 1335px;
+    bottom: 10px;
+    right: 10px;
 
     border-right: 7px solid transparent;
     border-left: 7px solid transparent;
