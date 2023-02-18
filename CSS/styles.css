@@ -5,9 +5,10 @@
     --highlightColor: #FF5252;
 
     --primaryFontFamily: "Press Start 2P";
-    --secondaryFontFamily: Jost;
+    --secondaryFontFamily: "Suez One";
 
     --botSize: 250px;
+
 }
 
 *{
@@ -16,6 +17,8 @@
 }
 
 body{
+    user-select: none;
+    
     background-color: var(--defaultBackgroudColor);
     font-family: var(--primaryFontFamily);
 }
@@ -38,19 +41,24 @@ main{
     flex-direction: column;
 }
 
-#botLogo{
+/* #botLogo{
     position: relative;
-}
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
 #botFace{
     width: var(--botSize);
 }
+*/
 
 #botEyes{
     display: flex;
     position: absolute;
 
-    width: var(--botSize);
+    top: 193px;
 }
 
 #talkingArea{
@@ -79,9 +87,9 @@ main{
 
     margin: 30px;
 }
-.talkingButton:hover{
+/* .talkingButton:hover{
     color: var(--highlightColor);
-}
+} */
 
 /* #triangleSelection{
     display: flex;
@@ -110,9 +118,9 @@ main{
 }
 
 #inviteButton{
-    margin-top: 50px;
+    margin-top: 60px;
 
-    width: 80px;
+    width: 120px;
 
     background-color: var(--highlightColor);
     
@@ -121,4 +129,7 @@ main{
 
     font-family: var(--secondaryFontFamily);
     font-size: 30px;
+
+    color: var(--primaryTextColor);
+    text-shadow: 1px 1px 1px #000000;
 }
