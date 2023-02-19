@@ -1,78 +1,37 @@
-function themeColorGenerate() {
+/*     ============== DEFINIÇÃO DAS CORES DO SITE ============ */
 
-/*     ============== DEFINIÇÃO DAS CORES ============ */
+const colorOptions = ["#00CCFF",
+                      "#FFDA47",
+                      "#50C878",
+                      "#FF2E82",
+                      "#CC99FF",
+                      "#FF5252"];
 
-    /* ----- Opções das cores ----- */
-    const themeOptions = ["#00CCFF",
-                        "#FFDA47",
-                        "#50C878",
-                        "#FF2E82",
-                        "#CC99FF",
-                        "#FF5252"];
-
-    const primaryFontColor = "#FFFFFF";
-
-    const colorTheme = themeOptions[Math.floor(Math.random() * themeOptions.length)];
+const primaryFontColor = "#FFFFFF";
+const randomColor = colorOptions[Math.floor(Math.random() * colorOptions.length)];
+const inviteButton = document.getElementById("inviteButton");
+const talkingButtons = document.querySelectorAll(".talkingButton");
+const botNamePaths = document.querySelectorAll(".botNameColor");
+const botColorSVGs = document.querySelectorAll(".botColorSVG");
 
 /*     ============== DESIGNANDO CORES AOS ELEMENTOS =============== */
 
-    /* ----- Cores dos botões na Talking Area ----- */
+inviteButton.style.backgroundColor = randomColor;
 
-    const inviteButton = document.getElementById("inviteButton");
-    inviteButton.style.backgroundColor = colorTheme;
+talkingButtons.forEach(function(talkingButton){
 
-    const aboutButton = document.getElementsByClassName("talkingButton")[0];
-    aboutButton.addEventListener("mouseover", function () {
-        aboutButton.style.color = colorTheme;
-    });
-    aboutButton.addEventListener("mouseout", function () {
-        aboutButton.style.color = primaryFontColor;
-    });
-
-    const commandButton = document.getElementsByClassName("talkingButton")[1];
-    commandButton.addEventListener("mouseover", function () {
-        commandButton.style.color = colorTheme;
-    });
-    commandButton.addEventListener("mouseout", function () {
-        commandButton.style.color = primaryFontColor;
-    });
+    talkingButton.addEventListener("mouseover", function(){
+        talkingButton.style.color = randomColor;
+    })
     
-    const contactButton = document.getElementsByClassName("talkingButton")[2];
-    contactButton.addEventListener("mouseover", function () {
-        contactButton.style.color = colorTheme;
-    });
-    contactButton.addEventListener("mouseout", function () {
-        contactButton.style.color = primaryFontColor;
-    });
-
-
-    /* ----- Cores dos SVGs ----- */
-
-    let botName = document.getElementsByClassName("botNameColor")[0];
-    botName.style.fill = colorTheme;
+    talkingButton.addEventListener("mouseout", function(){
+        talkingButton.style.color = primaryFontColor;
+    })
     
-    botName = document.getElementsByClassName("botNameColor")[1];
-    botName.style.fill = colorTheme;
-    
-    botName = document.getElementsByClassName("botNameColor")[2];
-    botName.style.fill = colorTheme;
+}); 
 
-    let botFace = document.getElementsByClassName("botFaceColor")[0];
-    botFace.style.fill = colorTheme;
-    
-    botFace = document.getElementsByClassName("botFaceColor")[1];
-    botFace.style.fill = colorTheme;
-    
-    botFace = document.getElementsByClassName("botFaceColor")[2];
-    botFace.style.fill = colorTheme;
+/* ----- Cores dos SVGs ----- */
 
-    botFace = document.getElementsByClassName("botFaceColor")[3];
-    botFace.style.fill = colorTheme;
-}
-
-themeColorGenerate();
-
-
-/* function eyesAnimation {
-
-} */
+botColorSVGs.forEach(function(botColorSVG){
+    botColorSVG.style.fill = randomColor;
+});
