@@ -31,7 +31,7 @@
                 </svg>
             </nav>
         </header>
-       
+
         <main>
 
             <section id="botLogo">
@@ -39,7 +39,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M32.2835 51.6401V56.7829C32.2835 58.3676 33.5795 59.6632 35.1651 59.6632C36.7498 59.6632 38.0454 58.3676 38.0454 56.7829V51.6401C38.0454 50.0553 36.7498 48.7589 35.1643 48.7589C33.5795 48.7589 32.2835 50.0553 32.2835 51.6401Z" fill="#000000"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M67.649 51.6401V56.7829C67.649 58.3676 68.9453 59.6632 70.5308 59.6632C72.1152 59.6632 73.4112 58.3676 73.4112 56.7829V51.6401C73.4112 50.0553 72.1152 48.7589 70.5297 48.7589C68.9453 48.7589 67.649 50.0553 67.649 51.6401Z" fill="#000000"/>
                 </svg>
- 
+
                 <svg id="botFace" width="250" height="202.83" viewBox="0 0 106 86" fill="none" xmlns="http://www.w3.org/2000/svg"> 
                     <path class="botColorSVG" fill-rule="evenodd" clip-rule="evenodd" d="M4.63515 43.1235H8.66451V64.3712H4.63515C2.43584 64.3712 0.637169 62.5722 0.637169 60.3736V47.1215C0.637169 44.9225 2.43584 43.1235 4.63515 43.1235Z" fill="#FF5252"/>
                     <path class="botColorSVG" fill-rule="evenodd" clip-rule="evenodd" d="M101.176 43.1235H97.147V64.3712H101.176C103.376 64.3712 105.174 62.5722 105.174 60.3736V47.1215C105.174 44.9225 103.376 43.1235 101.176 43.1235Z" fill="#FF5252"/>
@@ -52,13 +52,15 @@
             </section>
 
             <section id="talkingArea">
-                <button class="talkingButton">About</button>
-                <button class="talkingButton">Commands</button>
-                <button class="talkingButton">Contact</button>
+                <article id="buttonWrapper">
+                    <button class="talkingButton">About</button>
+                    <button class="talkingButton">Commands</button> 
+                    <button class="talkingButton">Contact</button>  
+                </article>
 
-                <div id="triangleSelection"></div>
+                <p id="botMessage"></p>
+                <div id="closeButton"></div>
 
-                <div id="triangleClose"></div>
             </section>
             
             <section id="inviteArea">
