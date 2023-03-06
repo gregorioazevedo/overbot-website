@@ -44,11 +44,29 @@ main{
     position: relative;
 }
 
-#botEyes{
-    position: absolute;
+#botEyesWrapper{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 
-    top: 0;
-    left: 0;
+    gap: 70px;
+
+    position: absolute;
+    width: 250px;
+    height: 253px;
+
+    
+}
+
+.botEyes{
+    display: flex;
+
+    width: 13px;
+    height: 25px;
+
+    border-radius: 200px;
+
+    background-color: #000000;
 }
 
 #talkingArea{
@@ -70,8 +88,6 @@ main{
     display: inline-block;
 
     margin: auto;
-
-    background-color:#FF5252; 
 }
 
 #botMessage::after{
